@@ -1,10 +1,5 @@
-<script>
-	function handleClick() {
-	}
-</script>
-
-<button on:click={handleClick}>
-    
+<button>
+	<slot></slot>
 </button>
 
 <style lang="scss">
@@ -14,6 +9,7 @@ button {
 	padding: 0.5em 1em;
 	font-weight: 700;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 
 
